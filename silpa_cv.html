@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SILPA S — CV</title>
+  <style>
+    :root{
+      --ink:#1f2a44;
+      --muted:#586680;
+      --accent:#1f6ad6;
+      --rule:#e6e9ef;
+      --bg:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--ink);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .page{max-width:940px;margin:40px auto;padding:0 24px}
+    header{display:flex;flex-direction:column;gap:8px;margin-bottom:22px}
+    .name{font-size:28px; font-weight:700; letter-spacing:.2px}
+    .role{color:var(--accent);font-weight:600}
+    .contact{display:flex;flex-wrap:wrap;gap:12px;color:var(--muted)}
+    .contact span{display:flex;gap:6px;align-items:center}
+    .grid{display:grid;grid-template-columns:2fr 1fr;gap:28px}
+    section{margin-bottom:18px}
+    h2{font-size:14px;text-transform:uppercase;letter-spacing:.14em;color:var(--muted);margin:18px 0 10px}
+    .card{background:#fff;border:1px solid var(--rule);border-radius:12px;padding:16px}
+    ul{margin:8px 0 0 18px}
+    li{margin:6px 0}
+    .pill{display:inline-block;border:1px solid var(--rule);border-radius:999px;padding:6px 10px;margin:6px 6px 0 0;font-size:13px;color:#24324d;background:#fafbfe}
+    .split{display:flex;justify-content:space-between;gap:12px}
+    .split .right{color:var(--muted);white-space:nowrap}
+    .roleline b{font-weight:600}
+    /* Small screens */
+    @media (max-width:800px){
+      .grid{grid-template-columns:1fr;gap:16px}
+      .page{margin:24px auto}
+    }
+    /* Print */
+    @media print{
+      body{background:#fff}
+      .page{margin:0;max-width:none;padding:0}
+      .card{border-color:#cfd6e4;border-radius:8px}
+      a{text-decoration:none;color:inherit}
+    }
+  </style>
+</head>
+<body>
+  <main class="page" role="main" aria-label="Resume">
+    <header>
+      <div class="name">SILPA S</div>
+      <div class="role">Python Developer</div>
+      <div class="contact" aria-label="Contact information">
+        <span>📞 7558871069</span>
+        <span>✉ <a href="mailto:silpasabari2203@gmail.com">silpasabari2203@gmail.com</a></span>
+        <span>📍 Palakkad, Kerala</span>
+        <span>🔗 <a href="https://www.linkedin.com/in/silpa-s-306534348" target="_blank" rel="noopener">LinkedIn</a></span>
+        <span>💻 <a href="https://github.com/silpasabari-22" target="_blank" rel="noopener">GitHub</a></span>
+      </div>
+    </header>
+
+    <div class="grid">
+      <!-- Left column -->
+      <div>
+        <!-- Summary -->
+        <section>
+          <h2>Summary</h2>
+          <div class="card">
+            Motivated <b>Python Developer</b> skilled in building <b>scalable, efficient applications</b> using
+            <b>Python, Django, and React</b>. Strong in <b>problem-solving, debugging, and writing clean code</b>,
+            with expertise in <b>OOP</b>, <b>regular expressions</b>, and modern web technologies.
+          </div>
+        </section>
+
+        <!-- Internship -->
+        <section>
+          <h2>Internship</h2>
+          <div class="card">
+            <div class="split roleline">
+              <b>One Team Solutions, Kochi — Full Stack Python (Django + React)</b>
+              <span class="right">Jun 2025 – Present</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Project -->
+        <section>
+          <h2>Project</h2>
+          <div class="card">
+            <div class="roleline"><b>Vehicle Tracking Application</b></div>
+            <ul>
+              <li>Tracks and manages vehicle registration, maintenance, fuel expenses, and taxes.</li>
+              <li>Supports four user roles for streamlined coordination and access control.</li>
+              <li>Improves efficiency in vehicle oversight and maintenance scheduling.</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Education -->
+        <section>
+          <h2>Education</h2>
+          <div class="card">
+            <div class="split roleline">
+              <b>B.Sc. Computer Science — Calicut University</b>
+              <span class="right">2022 – 2025</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- Right column -->
+      <div>
+        <!-- Technical Skills -->
+        <section>
+          <h2>Technical Skills</h2>
+          <div class="card">
+            <div style="margin-bottom:6px;"><b>Languages & Frameworks</b></div>
+            <span class="pill">Python</span>
+            <span class="pill">Django</span>
+            <span class="pill">React</span>
+            <span class="pill">HTML</span>
+            <span class="pill">CSS</span>
+            <span class="pill">JavaScript</span>
+            <span class="pill">Bootstrap</span>
+
+            <div style="margin:14px 0 6px;"><b>Database</b></div>
+            <span class="pill">MySQL</span>
+
+           
+        </section>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

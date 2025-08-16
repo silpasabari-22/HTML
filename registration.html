@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f18ee0;
+            margin:0;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+        }
+        .form-section {
+            background-color: black;
+            color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 5px 20px rgba(19, 18, 18, 0.3);
+            width: 350px;
+        }
+
+        .form-section h2 {
+            margin-bottom: 20px;
+        }
+
+        .form-section input, 
+        .form-section select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 1px solid gray;
+            background: none;
+            color: rgb(229, 224, 224);
+            outline: none;
+        }
+
+        .form-section input::placeholder {
+            color: gray;
+        }
+
+        .form-section button {
+            background-color: #1ea40c;
+            border: none;
+            padding: 10px 20px;
+            color:black;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .form-section button:hover {
+            background-color: #6ca35a;
+        }
+    </style>
+</head>
+<body>
+   <div class="form-section">
+        <h2>Registration info</h2>          
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Address" required>
+            <input type="text" placeholder="Zip Code" required>
+            <select required>
+                <option value="">State</option>
+                <option value="KL">Kerala</option>
+                <option value="TN">Tamil Nadu</option>
+                <option value="MH">Maharashtra</option>
+            </select>
+            <input type="text" placeholder="Username (6-8 characters)" pattern=".{6,8}" required>
+            <input type="email" placeholder="Email" required><br><br>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
