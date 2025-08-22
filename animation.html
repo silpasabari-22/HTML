@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoran</title>
+  <style>
+    * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #0a0a0a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  /* background: rgba(0,0,0,0.85); */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar h1 {
+  color: #ff8800;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+.navbar ul li {
+  margin: 0 15px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: #ff8800;
+}
+
+.navbar .btn {
+  background: #ff8800;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.navbar .btn:hover {
+  background: #e06e00;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.9)), url('bg-hero.jpg') no-repeat center center/cover;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.hero-text .btn {
+  padding: 12px 25px;
+  font-size: 16px;
+}
+
+.hero-img {
+  max-width: 45%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.hero-img img {
+  width: 100%;
+  box-shadow: none;
+  animation: rotateGrill 15s linear infinite; /* Animation */
+  transform-origin: center;
+
+}
+
+/* Rotation Animation */
+@keyframes rotateGrill {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.hero-text .btn{
+  background: #ff8800;
+  color: #fff;
+  /* padding: 8px 15px; */
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+
+.hero-text .btn:hover {
+  background: #e06e00;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <h1>🍴 Restoran</h1>
+    <div style="display: flex;align-items: center;gap: 10px;">
+      <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Service</a></li>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="#" class="btn">Book a Table</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Enjoy Our Delicious Meal</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at est at nunc gravida vehicula.</p>
+      <a href="#" class="btn">Book a Table</a>
+    </div>
+    <div class="hero-img">
+      <!-- Replace with your uploaded BBQ image -->
+      <img src="hero.png" alt="Delicious BBQ Grill">
+    </div>
+  </section>
+</body>
+</html>
